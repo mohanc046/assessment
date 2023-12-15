@@ -5,15 +5,9 @@ const mongoose = require("mongoose");
 
 const { logger } = require("../utils/logger");
 
-const options = {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-};
+mongoose.connect(process.env.mongoURI);
 
-
-mongoose.connect(process.env.mongoURI, options);
-
-mongoose.connection.on("connected", () => { console.log(" mongoose connected successfully") });
+mongoose.connection.on("connected", () => { logger.info(" mongoose connected successfully") });
 
 mongoose.connection.on("error", err => {
   logger.error("Mongoose connection has occurred " + err + " error");

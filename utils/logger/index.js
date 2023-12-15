@@ -5,7 +5,11 @@ const logger = bunyan.createLogger({
     streams: [
         {
             level: 'info',
-            stream: process.stdout
+            stream: process.stdout,
+        },
+        {
+            level: 'info',
+            path: './myApp-info.log'
         },
         {
             level: 'error',

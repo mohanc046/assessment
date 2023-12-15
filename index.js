@@ -12,17 +12,10 @@ const cors = require("cors");
 
 const helmet = require('helmet');
 
-// authentication
-require("./connection/passport");
-
 // mongoose connection
 require("./connection/mongoose");
 
-// require('./utils/cron');
-
 app.use(cors());
-
-// app.use(cors({ credentials: true, origin: true }));
 
 app.use(bodyParser.json({ limit: "20mb" }));
 
