@@ -123,8 +123,3 @@ function strongPasswordChecker(password) {
 
 
 module.exports = { strongPasswordChecker }
-
-// console.log(strongPasswordChecker("1337C-d3"));
-// console.log(strongPasswordChecker("a"));
-// console.log(strongPasswordChecker("aAa1aaB"));
-// console.log(strongPasswordChecker("5aA1233434343432312333"));

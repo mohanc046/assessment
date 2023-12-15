@@ -126,8 +126,3 @@ const findMinimumSubsetSumDifference = (arrayOfNumbers) => {
 }
 
 module.exports = { findMinimumSubsetSumDifference }
-
-// console.log(findMinimumSubsetSumDifference([3, 9, 7, 3]))
-// console.log(findMinimumSubsetSumDifference([-36, 36]))
-// console.log(findMinimumSubsetSumDifference([2, -1, 0, 4, -2, -9]))
-// console.log(findMinimumSubsetSumDifference([2, -1, 0]))
