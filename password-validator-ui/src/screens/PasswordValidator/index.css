@@ -1,0 +1,16 @@
+.header-container {
+    padding: 0;
+    background-color: white;
+}
+
+.context-container {
+    margin: 45px 16px 0;
+}
+
+.row-container {
+    margin-top: 10px;
+}
+
+.layout-container {
+    min-height: 100vh;
+}
