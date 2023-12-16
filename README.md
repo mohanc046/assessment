@@ -7,7 +7,9 @@ This project aims to provide functionalities related to password checking and ar
 
 Password Checking UI Live Demo - https://password-validator-21f0e.web.app
 
-![Screenshot](/UI-Reference/success-case.png)
+ [Demo video ](https://www.loom.com/share/d53085ad21ae45049fdedee1e3e7dd76?sid=90c6af3d-01d6-4f05-a4cd-6bc6786582aa)
+
+[![Screenshot](/UI-Reference/success-case.png)](https://www.loom.com/share/d53085ad21ae45049fdedee1e3e7dd76?sid=90c6af3d-01d6-4f05-a4cd-6bc6786582aa)
 
 ![Screenshot](/UI-Reference/failure-case.png)
 
@@ -321,3 +323,27 @@ The implementation for finding the minimum possible absolute difference of an ar
 ## Test Cases
 
 Test cases dedicated to validating the correctness and functionality of the implemented features are situated in the `/test` directory. These test cases encompass various scenarios and edge cases to ensure the robustness of the functionalities.
+
+# Javascript - Test Results
+
+## Test Suite: Strong Password Checker
+  - ✔ Below Minimum Length: should return the maximum between missing types and the shortfall in length 
+  - ✔ Exceeds Maximum Length: should return the number of characters to be deleted to meet the length constraint 
+  - ✔ Character Type Checks: should return the count of missing character types
+  - ✔ Repeated Characters: should return 0 for a password without consecutive repeated characters
+  - ✔ Empty Password: should return the maximum possible missing types count (all 3 types)
+  - ✔ Exact Minimum Length: should return 0 for a password meeting the minimum length and character type requirements
+  - ✔ Exact Maximum Length: should return the count of characters to be deleted to satisfy the maximum length constraint
+  - ✔ No Numbers: should have one missing digit type
+  - ✔ No Lowercase: should have one missing lowercase type 
+  - ✔ No Uppercase: should have one missing uppercase type
+
+## Test Suite: Find Minimum Subset Sum Difference
+
+  - ✔ Basic Case with Positive Numbers: should return the minimum absolute difference between subset sums for an array of positive numbers 
+  - ✔ Case with Negative Numbers and Zeros: should return the minimum absolute difference between subset sums for an array containing negative numbers and zeros
+  - ✔ Case with Repeated Numbers: should return 0 for an array containing repeated numbers
+  - ✔ Case with Large Numbers: should return 0 for an array containing large numbers
+  - ✔ Case with Empty Array: should return 0 for an empty array
+  - ✔ Case with Single Element: should return the absolute difference between the single element and its negative counterpart
+  - ✔ Case with Mix of Positive and Negative Numbers: should return the minimum absolute difference between subset sums for an array with positive and negative numbers
