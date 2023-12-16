@@ -9,6 +9,7 @@ import { Content, Header } from 'antd/es/layout/layout';
 import LeftNav from '../../components/sideBar';
 import './index.css';
 import CustomBreadCrumb from '../../components/customBreadCrumb';
+import _ from 'lodash';
 
 /**
  * PasswordValidator component for validating passwords.
@@ -26,6 +27,11 @@ function PasswordValidator() {
      */
     const handleButtonClick = async () => {
         try {
+
+            if (_.isEmpty(password)) {
+                return notification.warning({ message: "Ensure that a valid password is entered before initiating validation!" })
+            }
+
             setLoadingStatus(true);
             const response = await validatePasswordAPI({ password });
             setValidationResult(response);

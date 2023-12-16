@@ -1,3 +1,3 @@
 export const CONFIG = {
-    SERVICE_URL: "https://validator-service.onrender.com/v1"
+    SERVICE_URL: "http://localhost:3005/v1"
 }
