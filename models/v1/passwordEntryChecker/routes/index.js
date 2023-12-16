@@ -8,6 +8,6 @@ const { validationSchema } = require("../validation");
 
 const { CREATE_ENTRY } = validationSchema;
 
-router.post('/create', validateRequest(CREATE_ENTRY), passwordEntryController.createEntry);
+router.post('/', validateRequest(CREATE_ENTRY), passwordEntryController.createEntry);
 
 module.exports = router;

@@ -26,7 +26,7 @@ app.use(cookieParser());
 app.use(helmet());
 
 // changed port to env for auto porting from heroku
-const PORT = process.env.PORT || 3005
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => { console.log(`Server listening on port ${PORT}...`); });
 
