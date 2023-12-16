@@ -345,5 +345,5 @@ Test cases dedicated to validating the correctness and functionality of the impl
   - ✔ Case with Repeated Numbers: should return 0 for an array containing repeated numbers
   - ✔ Case with Large Numbers: should return 0 for an array containing large numbers
   - ✔ Case with Empty Array: should return 0 for an empty array
-  - ✔ Case with Single Element: should return the absolute difference between the single element and its negative counterpart
+  - ✔ Case with Array of Two Numbers: should return 72 for an array [-36, 36]
   - ✔ Case with Mix of Positive and Negative Numbers: should return the minimum absolute difference between subset sums for an array with positive and negative numbers

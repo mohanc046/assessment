@@ -26,7 +26,7 @@ describe('Find Minimum Subset Sum Difference', () => {
         expect(findMinimumSubsetSumDifference(array)).toBe(0);
     });
 
-    test('Case with Single Element: should return the absolute difference between the single element and its negative counterpart', () => {
+    test('Case with Array of Two Numbers: should return 72 for an array [-36, 36]', () => {
         const array = [-36, 36];
         expect(findMinimumSubsetSumDifference(array)).toBe(72);
     });
